@@ -15,8 +15,6 @@ const images = [
 
 const galleryBox = document.querySelector('.gallery');
 
-const imagesList = images.flatMap(item => 
-  `<li><img src="${item.url}" alt="${item.alt}" /></li>`
-).join('');
-
-galleryBox.innerHTML = imagesList;
+galleryBox.innerHTML = images
+  .flatMap(item => `<li><img src="${item.url}" alt="${item.alt}" /></li>`)
+  .join('');
