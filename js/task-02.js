@@ -16,7 +16,7 @@ const images = [
 const galleryBox = document.querySelector('.gallery');
 
 const gallery = images
-.flatMap(item => `<li><img src="${item.url}" alt="${item.alt}" /></li>`)
-.join('');
+  .flatMap(item => `<li><img src="${item.url}" alt="${item.alt}" /></li>`)
+  .join('');
 
-galleryBox.insertAdjacentHTML("afterbegin", gallery);
+galleryBox.insertAdjacentHTML('afterbegin', gallery);
